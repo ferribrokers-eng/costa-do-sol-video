@@ -1,0 +1,137 @@
+{
+  "_comment": "Roteiro da narração. 'text' = legenda exibida (exatamente o roteiro). 'tts' = como o gerador de voz deve pronunciar (números por extenso). Depois de editar, rode: python3 tools/gerar_narracao.py",
+  "scenes": [
+    {
+      "id": "Scene01",
+      "title": "Abertura",
+      "sentences": [
+        {"text": "Em Canavieiras, no sul da Bahia, existe uma pousada pé na areia que os hóspedes adoram.", "tts": "Em Canavieiras, no sul da Bahia, existe uma pousada pé na areia que os hóspedes adoram."},
+        {"text": "São 188 avaliações no Google com nota 4,8 e 119 na Booking com nota 9,4.", "tts": "São cento e oitenta e oito avaliações no Google, com nota quatro vírgula oito, e cento e dezenove na Búking, com nota nove vírgula quatro."},
+        {"text": "Quem conhece, volta.", "tts": "Quem conhece, volta."},
+        {"text": "Mas existe uma pergunta que vale dinheiro: e quem ainda não conhece?", "tts": "Mas existe uma pergunta que vale dinheiro: e quem ainda não conhece?"},
+        {"text": "Como essa pessoa chega até aqui?", "tts": "Como essa pessoa chega até aqui?"},
+        {"text": "Esta é a história de uma viagem e de alguns vazamentos que acontecem no caminho.", "tts": "Esta é a história de uma viagem, e de alguns vazamentos que acontecem no caminho."}
+      ]
+    },
+    {
+      "id": "Scene02",
+      "title": "A Marina no sofá",
+      "sentences": [
+        {"text": "Esta é a Marina.", "tts": "Esta é a Marina."},
+        {"text": "Ela mora em Salvador e está no sofá depois do trabalho.", "tts": "Ela mora em Salvador, e está no sofá depois do trabalho."},
+        {"text": "Ela rola a tela: um vídeo de cachorro, uma receita, uma dancinha, a foto de uma praia linda.", "tts": "Ela rola a tela: um vídeo de cachorro, uma receita, uma dancinha, a foto de uma praia linda."},
+        {"text": "Ela curte e continua rolando.", "tts": "Ela curte, e continua rolando."},
+        {"text": "Repare: a Marina viu a pousada, mas não estava procurando viagem.", "tts": "Repare: a Marina viu a pousada, mas não estava procurando viagem."},
+        {"text": "Ela estava passando o tempo.", "tts": "Ela estava passando o tempo."},
+        {"text": "Isso é a rede social.", "tts": "Isso é a rede social."},
+        {"text": "Ela é ótima para fazer as pessoas sonharem e lembrarem da sua marca.", "tts": "Ela é ótima para fazer as pessoas sonharem, e lembrarem da sua marca."},
+        {"text": "O Instagram da pousada tem 5.130 seguidores e é muito bem feito.", "tts": "O Instagram da pousada tem cinco mil cento e trinta seguidores, e é muito bem feito."},
+        {"text": "Só que a maioria das pessoas ali está curiosa, não com a mala pronta.", "tts": "Só que a maioria das pessoas ali está curiosa, não com a mala pronta."}
+      ]
+    },
+    {
+      "id": "Scene03",
+      "title": "A virada",
+      "sentences": [
+        {"text": "Alguns dias depois, a Marina tira férias.", "tts": "Alguns dias depois, a Marina tira férias."},
+        {"text": "Agora tudo muda.", "tts": "Agora tudo muda."},
+        {"text": "Ela tem data, tem destino e tem dinheiro separado.", "tts": "Ela tem data, tem destino, e tem dinheiro separado."},
+        {"text": "E o que ela faz?", "tts": "E o que ela faz?"},
+        {"text": "Ela abre o Google e digita: pousada em Canavieiras.", "tts": "Ela abre o Google e digita: pousada em Canavieiras."},
+        {"text": "Essa é a pessoa que a pousada precisa receber, porque ela não está passeando, ela está comprando.", "tts": "Essa é a pessoa que a pousada precisa receber, porque ela não está passeando. Ela está comprando."},
+        {"text": "Só nessa região, entre mil e 2.500 pessoas por mês fazem buscas parecidas com a da Marina.", "tts": "Só nessa região, entre mil e duas mil e quinhentas pessoas por mês fazem buscas parecidas com a da Marina."}
+      ]
+    },
+    {
+      "id": "Scene04",
+      "title": "A boa notícia",
+      "sentences": [
+        {"text": "E olha que boa notícia: no bloco de hotéis do Google, a Costa do Sol aparece em primeiro lugar.", "tts": "E olha que boa notícia: no bloco de hotéis do Google, a Costa do Sol aparece em primeiro lugar."},
+        {"text": "A reputação já fez o trabalho mais difícil.", "tts": "A reputação já fez o trabalho mais difícil."},
+        {"text": "A Marina gosta das fotos e da nota.", "tts": "A Marina gosta das fotos e da nota."},
+        {"text": "Ela quer saber mais e clica.", "tts": "Ela quer saber mais, e clica."},
+        {"text": "É aqui que começam os vazamentos.", "tts": "É aqui que começam os vazamentos."}
+      ]
+    },
+    {
+      "id": "Scene05",
+      "title": "Furo 1 — Sem site oficial",
+      "sentences": [
+        {"text": "Pense na internet como um cano que leva clientes até a pousada.", "tts": "Pense na internet como um cano que leva clientes até a pousada."},
+        {"text": "O primeiro furo é este: a pousada não tem um site próprio.", "tts": "O primeiro furo é este: a pousada não tem um site próprio."},
+        {"text": "Quando a Marina procura pelo nome da pousada, o primeiro resultado não é a pousada, é uma plataforma de reservas.", "tts": "Quando a Marina procura pelo nome da pousada, o primeiro resultado não é a pousada. É uma plataforma de reservas."},
+        {"text": "É como se alguém procurasse a sua loja e encontrasse primeiro a vitrine de um shopping que cobra pedágio.", "tts": "É como se alguém procurasse a sua loja, e encontrasse primeiro a vitrine de um shópin que cobra pedágio."},
+        {"text": "Sem site, a pousada não tem uma casa dela na internet, com as fotos, os preços e o jeito dela de atender.", "tts": "Sem site, a pousada não tem uma casa dela na internet, com as fotos, os preços, e o jeito dela de atender."}
+      ]
+    },
+    {
+      "id": "Scene06",
+      "title": "Furo 2 — O link leva para o Instagram",
+      "sentences": [
+        {"text": "O segundo furo é mais sutil.", "tts": "O segundo furo é mais sutil."},
+        {"text": "No perfil do Google, o botão de site leva para o Instagram.", "tts": "No perfil do Google, o botão de site leva para o Instagram."},
+        {"text": "A Marina queria saber se tem vaga em janeiro e quanto custa.", "tts": "A Marina queria saber se tem vaga em janeiro, e quanto custa."},
+        {"text": "Em vez disso, ela cai no meio de vídeos, stories e notificações, o mesmo lugar onde ela se distraía no sofá.", "tts": "Em vez disso, ela cai no meio de vídeos, istóris e notificações. O mesmo lugar onde ela se distraía no sofá."},
+        {"text": "Uma notificação aparece, ela se distrai, e a pousada perde a atenção dela.", "tts": "Uma notificação aparece, ela se distrai, e a pousada perde a atenção dela."}
+      ]
+    },
+    {
+      "id": "Scene07",
+      "title": "Furo 3 — Comissão",
+      "sentences": [
+        {"text": "O terceiro furo é o pedágio.", "tts": "O terceiro furo é o pedágio."},
+        {"text": "Quando o botão de comparar preços leva a Marina para uma plataforma, ela até reserva, mas a plataforma fica com uma parte.", "tts": "Quando o botão de comparar preços leva a Marina para uma plataforma, ela até reserva. Mas a plataforma fica com uma parte."},
+        {"text": "As comissões ficam entre 15% e 18%.", "tts": "As comissões ficam entre quinze e dezoito por cento."},
+        {"text": "Numa estadia de R$ 1.350, isso significa de R$ 203 a R$ 243 que saem do caixa da pousada.", "tts": "Numa estadia de mil trezentos e cinquenta reais, isso significa de duzentos e três a duzentos e quarenta e três reais, que saem do caixa da pousada."},
+        {"text": "A plataforma é útil, mas não precisa ser a única porta.", "tts": "A plataforma é útil, mas não precisa ser a única porta."}
+      ]
+    },
+    {
+      "id": "Scene08",
+      "title": "Furo 4 — Sem resposta à noite",
+      "sentences": [
+        {"text": "O quarto furo é o horário.", "tts": "O quarto furo é o horário."},
+        {"text": "O atendimento vai das 7h às 21h.", "tts": "O atendimento vai das sete da manhã às nove da noite."},
+        {"text": "Mas muita gente planeja viagem à noite, quando as crianças dormem.", "tts": "Mas muita gente planeja viagem à noite, quando as crianças dormem."},
+        {"text": "Se ninguém responde, a Marina não espera.", "tts": "Se ninguém responde, a Marina não espera."},
+        {"text": "Ela procura a próxima opção.", "tts": "Ela procura a próxima opção."}
+      ]
+    },
+    {
+      "id": "Scene09",
+      "title": "Quanto escorre",
+      "sentences": [
+        {"text": "Quanto isso pode valer?", "tts": "Quanto isso pode valer?"},
+        {"text": "Fizemos uma simulação com três cenários.", "tts": "Fizemos uma simulação com três cenários."},
+        {"text": "No mais cauteloso, são cerca de R$ 16 mil por ano.", "tts": "No mais cauteloso, são cerca de dezesseis mil reais por ano."},
+        {"text": "No cenário do meio, perto de R$ 70 mil por ano, ou uns R$ 190 por dia.", "tts": "No cenário do meio, perto de setenta mil reais por ano, ou uns cento e noventa reais por dia."},
+        {"text": "No mais otimista, perto de R$ 194 mil.", "tts": "No mais otimista, perto de cento e noventa e quatro mil."},
+        {"text": "São estimativas, e o número real depende das diárias e da ocupação da própria pousada.", "tts": "São estimativas, e o número real depende das diárias e da ocupação da própria pousada."},
+        {"text": "Mas a lição é clara: o dinheiro já está procurando a pousada, e parte dele escorre pelos furos.", "tts": "Mas a lição é clara: o dinheiro já está procurando a pousada, e parte dele escorre pelos furos."}
+      ]
+    },
+    {
+      "id": "Scene10",
+      "title": "A vitrine",
+      "sentences": [
+        {"text": "A solução começa pela vitrine.", "tts": "A solução começa pela vitrine."},
+        {"text": "O primeiro passo, e o mais urgente, é um site oficial: rápido, bonito no celular, com as cores da pousada, as suítes, os chalés, a piscina, a quadra de areia, as fotos reais e tudo o que a estadia oferece.", "tts": "O primeiro passo, e o mais urgente, é um site oficial: rápido, bonito no celular, com as cores da pousada, as suítes, os chalés, a piscina, a quadra de areia, as fotos reais, e tudo o que a estadia oferece."},
+        {"text": "Segundo, deixar o Google Meu Negócio completo e organizado, levando direto para esse site.", "tts": "Segundo, deixar o Google Meu Negócio completo e organizado, levando direto para esse site."},
+        {"text": "Terceiro, trabalhar o site para aparecer de forma natural, sem anúncio, quando alguém procura pousada em Canavieiras.", "tts": "Terceiro, trabalhar o site para aparecer de forma natural, sem anúncio, quando alguém procura pousada em Canavieiras."},
+        {"text": "E o melhor: o site filtra.", "tts": "E o melhor: o site filtra."},
+        {"text": "Quem chega ao WhatsApp já viu as fotos, os quartos e o que está incluído.", "tts": "Quem chega ao uótsap já viu as fotos, os quartos, e o que está incluído."},
+        {"text": "Acabam aquelas conversas de quem só está curioso, e chegam pessoas prontas para reservar.", "tts": "Acabam aquelas conversas de quem só está curioso, e chegam pessoas prontas para reservar."}
+      ]
+    },
+    {
+      "id": "Scene11",
+      "title": "Final feliz",
+      "sentences": [
+        {"text": "Agora a Marina busca, encontra a casa da pousada na internet, conversa no WhatsApp e reserva direto.", "tts": "Agora a Marina busca, encontra a casa da pousada na internet, conversa no uótsap, e reserva direto."},
+        {"text": "A pousada já tem o mar, o carinho e as avaliações.", "tts": "A pousada já tem o mar, o carinho, e as avaliações."},
+        {"text": "Falta só abrir a porta certa para quem está procurando.", "tts": "Falta só abrir a porta certa para quem está procurando."},
+        {"text": "Ferri Digital: transformando busca em reserva.", "tts": "Ferri Digital: transformando busca em reserva."}
+      ]
+    }
+  ]
+}

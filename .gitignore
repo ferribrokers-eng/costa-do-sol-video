@@ -1,0 +1,4 @@
+node_modules/
+out/
+tools/trilha.wav
+*.log

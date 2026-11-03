@@ -1,0 +1,23 @@
+{
+  "name": "costa-do-sol-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Main out/costa-do-sol.mp4",
+    "still": "remotion still src/index.ts"
+  },
+  "dependencies": {
+    "@fontsource/baloo-2": "5.2.6",
+    "@fontsource/poppins": "5.2.6",
+    "@remotion/cli": "4.0.484",
+    "@remotion/media-utils": "4.0.484",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "typescript": "6.0.3"
+  }
+}
