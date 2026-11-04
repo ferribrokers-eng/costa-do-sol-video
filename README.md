@@ -1,6 +1,6 @@
 # Pousada Costa do Sol — vídeo narrado (Ferri Digital)
 
-Vídeo horizontal 16:9 (1920×1080, 30 fps, H.264 + AAC 48 kHz), ~7min17s, feito em [Remotion](https://www.remotion.dev/).
+Vídeo horizontal 16:9 (1920×1080, 30 fps, H.264 + AAC 48 kHz), ~5min43s, feito em [Remotion](https://www.remotion.dev/).
 Conta a história da Marina e dos 4 "vazamentos" de reservas, terminando na solução: site oficial +
 Google Meu Negócio estruturado + 1ª página orgânica + WhatsApp com clientes filtrados.
 
@@ -38,7 +38,12 @@ O navegador usado na renderização é configurado em `remotion.config.ts`
 ## Trocar textos
 
 1. Edite `src/script.json`: `text` é a legenda, `tts` é o que a voz fala (escreva números por extenso).
-2. Gere a narração de novo: `python3 tools/gerar_narracao.py` (precisa de `pip install piper-tts` e do modelo em `tools/voz/`).
+2. Gere a narração de novo com a voz feminina (Chatterbox):
+   `python tools/gerar_narracao_chatterbox.py --ref tools/voz/referencia.wav --exaggeration 0.5`
+   (só algumas cenas: acrescente `Scene03 Scene07`). Instale com Python 3.11:
+   `uv venv -p 3.11 cbx && VIRTUAL_ENV=cbx uv pip install chatterbox-tts "setuptools<81"`.
+   Precisa de acesso a huggingface.co. `tools/voz/referencia.wav` (~15 s de voz de referência) fica fora do git.
+   No `tts`, escreva o texto normal (Booking, WhatsApp); números por extenso.
 3. As cenas se reajustam sozinhas: cada animação está presa ao início de uma frase (`at(S, 'começo da frase')`).
    Se mudar o começo de uma frase, atualize o `at(...)` correspondente na cena.
 
@@ -89,4 +94,6 @@ fade-in de 2 s e fade-out de 3 s.
 - Trilha e efeitos: biblioteca da skill video-shotcraft (Mixkit, licença gratuita para uso comercial;
   alguns arquivos sem URL de origem devem ser conferidos antes de uso comercial).
 - Som de mar: sintetizado (ruído filtrado), sem direitos de terceiros.
-- Voz: Piper TTS, modelo `pt-br-edresson-low` (voz provisória; recomenda-se trocar por locução profissional).
+- Voz: Chatterbox Multilingual (Resemble AI, licença MIT), português, timbre clonado de uma gravação de referência
+  fornecida pelo cliente. Antes de uso comercial, confirme os direitos da voz de referência.
+  A voz antiga (Piper, `tools/gerar_narracao.py`) continua no repositório como alternativa.
