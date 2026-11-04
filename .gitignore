@@ -4,3 +4,4 @@ tools/trilha.wav
 # renders grandes (>90 MB) ficam fora do git
 out/preview-cena01.mp4
 out/preview-cena10.mp4
+tools/voz/referencia.wav
