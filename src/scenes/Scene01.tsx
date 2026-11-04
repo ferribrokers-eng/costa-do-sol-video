@@ -112,7 +112,7 @@ export const Scene01: React.FC = () => {
         <Cam
           keys={[
             {f: tVolta, z: 1.0, x: -20},
-            {f: tVolta + 60, z: 1.05, x: 10},
+            {f: Math.min(tVolta + 60, Math.round((tVolta + tPerg) / 2)), z: 1.05, x: 10},
             {f: tPerg, z: 1.12, x: 30, y: -10},
           ]}
         >
