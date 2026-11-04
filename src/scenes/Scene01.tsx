@@ -84,6 +84,7 @@ export const Scene01: React.FC = () => {
         >
           <Photo src="aerea.jpg" from={tCity - 10} dur={tRate - tCity + 30} z0={1.25} z1={1.08} y0={-6} y1={2} />
         </Cam>
+        <AbsoluteFill style={{background: 'linear-gradient(20deg, rgba(8,20,40,0.75) 0%, rgba(8,20,40,0.35) 35%, transparent 60%)'}} />
         <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'flex-start', padding: '0 0 190px 110px'}}>
           <Title start={tCity + 25} style={{fontSize: 92, lineHeight: 1}}>
             Canavieiras
@@ -95,15 +96,15 @@ export const Scene01: React.FC = () => {
       <Seg a={tRate} b={tVolta + 10}>
         <Cam
           keys={[
-            {f: tRate, z: 1.06, x: 40},
-            {f: tRate + 80, z: 1.0, x: 0},
-            {f: tVolta, z: 1.05, x: -30},
+            {f: tRate, z: 1.08, x: 20},
+            {f: tRate + 80, z: 1.02, x: 0},
+            {f: tVolta, z: 1.06, x: 0, y: -10},
           ]}
         >
           <Photo src="piscina.jpg" from={tRate} dur={tVolta - tRate} z0={1.12} z1={1.22} blur={7} />
           <AbsoluteFill style={{background: 'rgba(10,30,60,0.25)'}} />
           <RatingCard start={tRate + 4} label="GOOGLE" score="4,8" scoreNum={4.8} max={5} reviews={188} dx={-370} />
-          <RatingCard start={tRate + 30} label="BOOKING" score="9,4" scoreNum={9.4} max={10} reviews={119} dx={370} />
+          <RatingCard start={tRate + 170} label="BOOKING" score="9,4" scoreNum={9.4} max={10} reviews={119} dx={370} />
         </Cam>
       </Seg>
       {/* 4. quem conhece, volta */}
@@ -138,7 +139,7 @@ export const Scene01: React.FC = () => {
           <AbsoluteFill style={{background: `radial-gradient(ellipse at 50% 45%, #24589A, ${C.marinho} 70%)`}} />
           <QuestionCrowd start={tPerg} />
           <AbsoluteFill style={{alignItems: 'center', paddingTop: 120}}>
-            <Title start={tPerg + 30} style={{fontSize: 84, textAlign: 'center'}}>
+            <Title start={at(S, 'e quem ainda')} style={{fontSize: 84, textAlign: 'center'}}>
               E quem <span style={{color: C.sol}}>ainda não conhece?</span>
             </Title>
           </AbsoluteFill>
@@ -160,7 +161,7 @@ export const Scene01: React.FC = () => {
       <Sfx at={110} src="shimmer-sparkle-sweep.mp3" vol={0.35} />
       <Sfx at={tCity - 14} src="swoosh-slow.mp3" vol={0.35} />
       <Sfx at={tRate + 4} src="pop.mp3" vol={0.35} />
-      <Sfx at={tRate + 30} src="pop.mp3" vol={0.35} />
+      <Sfx at={tRate + 170} src="pop.mp3" vol={0.35} />
       <Sfx at={tPerg} src="air-woosh-deep.mp3" vol={0.3} />
       <Sfx at={tHist + 50} src="water-drop-cave.mp3" vol={0.4} />
     </Shell>

@@ -288,7 +288,7 @@ const Funnel: React.FC<{start: number}> = ({start}) => {
     const born = i * 6;
     const dt = t - born;
     if (dt < 0 || dt > 130) continue;
-    const gold = rnd(i * 17) < 0.3;
+    const gold = rnd(i * 17) < 0.35;
     const x0 = 960 + (rnd(i * 5) - 0.5) * 640;
     let x = x0;
     let y = 80 + dt * 5.2;
@@ -308,7 +308,7 @@ const Funnel: React.FC<{start: number}> = ({start}) => {
     if (y > 790) continue;
     items.push(
       <div key={i} style={{position: 'absolute', left: x - 16, top: y - 20, opacity: op}}>
-        <Drop size={32} gold={gold} />
+        <Drop size={gold ? 44 : 36} gold={gold} />
       </div>,
     );
   }
@@ -326,10 +326,10 @@ const Funnel: React.FC<{start: number}> = ({start}) => {
       <div style={{position: 'absolute', left: 960 - 75, top: 735}}>
         <IcChat size={150} bg={C.coqueiro} color="#fff" style={{filter: 'drop-shadow(0 12px 30px rgba(0,0,0,0.4))'}} />
       </div>
-      <div style={{position: 'absolute', left: 1070, top: 785, opacity: lp, fontFamily: F.texto, color: '#fff', fontWeight: 700, fontSize: 32}}>
+      <div style={{position: 'absolute', left: 1070, top: 785, opacity: lp, fontFamily: F.texto, color: '#fff', fontWeight: 700, fontSize: 38}}>
         <span style={{color: C.sol}}>● </span>Prontos para reservar → WhatsApp
       </div>
-      <div style={{position: 'absolute', left: 170, top: 540, opacity: lp, fontFamily: F.texto, color: '#fff', fontWeight: 600, fontSize: 30, width: 380, textAlign: 'right'}}>
+      <div style={{position: 'absolute', left: 170, top: 540, opacity: lp, fontFamily: F.texto, color: '#fff', fontWeight: 600, fontSize: 36, width: 400, textAlign: 'right'}}>
         <span style={{color: C.azulClaro}}>● </span>Curiosos já tiram as dúvidas no site
       </div>
       <div style={{position: 'absolute', top: 90, left: 120}}>
@@ -350,7 +350,7 @@ const FlowIcons: React.FC<{start: number}> = ({start}) => {
     {ic: <IcChat size={150} bg={C.coqueiro} color="#fff" />, label: 'WhatsApp'},
     {ic: <IcCheck size={150} bg={C.sol} color={C.marinho} />, label: 'Reserva confirmada'},
   ];
-  const gap = 40;
+  const gap = 28;
   return (
     <AbsoluteFill>
       <Photo src="piscina.jpg" from={start} dur={200} z0={1.15} z1={1.25} blur={14} />
@@ -380,8 +380,8 @@ const FlowIcons: React.FC<{start: number}> = ({start}) => {
           </React.Fragment>
         );
       })}
-      <div style={{position: 'absolute', left: 1640, top: 600, opacity: interpolate(f, [start + 150, start + 170], [0, 1], clamp)}}>
-        <Marina width={170} smile={1} right={{a1: 150, a2: 20}} />
+      <div style={{position: 'absolute', left: 1560, top: 560, opacity: interpolate(f, [start + 130, start + 150], [0, 1], clamp)}}>
+        <Marina width={210} smile={1} right={{a1: 150, a2: 20}} />
       </div>
       <div style={{position: 'absolute', top: 150, width: 1920, textAlign: 'center'}}>
         <Title start={start + 150} style={{fontSize: 66}}>
@@ -396,7 +396,7 @@ const FlowIcons: React.FC<{start: number}> = ({start}) => {
 const Checklist: React.FC<{seal: number[]}> = ({seal}) => {
   const f = useCurrentFrame();
   return (
-    <div style={{position: 'absolute', top: 60, left: 0, width: 1920, display: 'flex', justifyContent: 'center', gap: 14}}>
+    <div style={{position: 'absolute', top: 60, left: 0, width: 1920, display: 'flex', justifyContent: 'center', gap: 10}}>
       {SEALS.map((l, i) => {
         const on = interpolate(f, [seal[i], seal[i] + 14], [0, 1], clamp);
         return (
@@ -405,8 +405,8 @@ const Checklist: React.FC<{seal: number[]}> = ({seal}) => {
             style={{
               fontFamily: F.texto,
               fontWeight: 700,
-              fontSize: 22,
-              padding: '10px 16px',
+              fontSize: 25,
+              padding: '10px 14px',
               borderRadius: 16,
               background: on > 0.5 ? '#fff' : 'rgba(255,255,255,0.12)',
               color: on > 0.5 ? C.marinho : 'rgba(255,255,255,0.55)',
